@@ -1,0 +1,225 @@
+/* ======== Global Styles ======== */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+/* ======== Header ======== */
+header {
+    text-align: center;
+    background-color: #ffcc80;
+    padding: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin: 0;
+    color: #4e342e;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-style: italic;
+    color: #5a3e1b;
+    font-size: 1.1em;
+}
+
+/* ======== Navigation Bar ======== */
+nav {
+    background-color: #333;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 12px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc80;
+}
+
+/* ======== Menu Section ======== */
+#menu {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+#menu h2 {
+    color: #b35c00;
+    font-size: 2em;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Each category box */
+.category {
+    background-color: #fff;
+    border: 2px solid #ffe0b2;
+    border-radius: 12px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 700px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category h3 {
+    border-bottom: 2px solid #ffcc80;
+    padding-bottom: 6px;
+    color: #b35c00;
+    font-size: 1.4em;
+}
+
+/* Menu list layout using Flexbox */
+.category ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.category li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed #ddd;
+    font-size: 1.05em;
+}
+
+.category li:last-child {
+    border-bottom: none;
+}
+
+.category li strong {
+    font-weight: 600;
+    color: #3e2723;
+}
+
+.category li span {
+    font-weight: 700;
+    color: #b35c00;
+}
+
+/* ======== Menu of the Day (Task 4) ======== */
+.menu-of-day {
+    background-color: #fff3e0;
+    border: 2px solid #ffcc80;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px auto;
+    text-align: center;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.menu-of-day h3 {
+    color: #b35c00;
+    margin-bottom: 10px;
+}
+
+.menu-of-day p {
+    font-size: 1.1em;
+}
+
+.menu-of-day img {
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+
+/* ======== Chef's Special Section (Task 4) ======== */
+.special {
+    background-color: #fff3e0;
+    text-align: center;
+    border: 2px solid #ffcc80;
+    border-radius: 12px;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 700px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.special h3 {
+    color: #b35c00;
+    margin-bottom: 8px;
+}
+
+.special img {
+    width: 85%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.special p {
+    font-size: 1.05em;
+    color: #4e342e;
+}
+
+/* ======== Contact Section ======== */
+#contact {
+    background-color: #ffe0b2;
+    padding: 25px;
+    text-align: center;
+    border-top: 3px solid #ffcc80;
+}
+
+#contact h2 {
+    color: #b35c00;
+}
+
+#contact p {
+    margin: 5px 0;
+    font-size: 1.05em;
+}
+
+/* ======== Footer ======== */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+/* ======== Responsive Design ======== */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .category,
+    .menu-of-day,
+    .special {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    #menu h2 {
+        font-size: 1.6em;
+    }
+
+   
+}
